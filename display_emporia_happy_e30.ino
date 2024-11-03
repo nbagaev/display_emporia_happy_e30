@@ -5,9 +5,9 @@ but PWCTR1 has 3 Parameters and VMCTR1 has 1 Parameter
 
 pinout
 1-  GND
-2-  BL Control 0.8V=BL_ON 1.2V=BL_HALF 1.7V=BL_OFF
-3-  BL 4V 
-4-  114Hz 350us Pulse when BL ON or HALF
+2-  BL -
+3-  BL +3V 64mA
+4-  114Hz 350us Pulse when BL ON 
 5-  RESET
 6-  C/D
 7-  SDA
