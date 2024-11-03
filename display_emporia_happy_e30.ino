@@ -22,6 +22,27 @@ pinout
 12- GND
 */
 
+//CS - GND
+
+/*
+Uno, Nano..
+SCL  13
+SDA  11
+#define SCX     10 //chip enable pin
+#define DCX     9  //data|command pin
+#define RES     8 //reset pin
+*/
+
+/*
+ESP32 WROOM32
+SCL  18
+SDA  23
+*/
+#define SCX     15 //chip enable pin
+#define DCX     2  //data|command pin
+#define RES     4 //reset pin
+
+
 #include <SPI.h>
 #define SLPOUT  0x11 //Sleep Out
 
@@ -50,22 +71,9 @@ pinout
 #define RASET   0x2B //Row address set
 #define RAMWR   0x2C //Memory Write
 
-#define SCX     10 //chip enable pin
-#define DCX     9  //data|command pin
-#define RES     8 //reset pin
 
-/*
-Uno, Nano..
-SCL  13
-SDA  11
 
-ESP32 WROOM32
-CSX  15
-DCX  2
-RES  4
-SCL  18
-SDA  23
-*/
+
 
 const uint8_t gamma_plus[] PROGMEM = {0x04,0x22,0x07,0x0A,0x2E,0x30,0x25,0x2A,0x28,0x26,0x2E,0x3A,0x00,0x01,0x03,0x13};
 const uint8_t gamma_minus[] PROGMEM = {0x04,0x16,0x06,0x0D,0x2D,0x26,0x23,0x27,0x27,0x25,0x2D,0x3B,0x00,0x01,0x04,0x13};
