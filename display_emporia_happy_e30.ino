@@ -5,6 +5,8 @@ but PWCTR1 has 3 Parameters and VMCTR1 has 1 Parameter
 
 FFC pitch 0.8mm
 
+CLK 26MHz
+
 pinout
 1-  GND
 2-  BL -
